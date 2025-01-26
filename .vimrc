@@ -27,7 +27,7 @@ call plug#begin()
  Plug 'terryma/vim-smooth-scroll'
 
  "Подсветка синтаксиса"
- Plug 'nvim-treesitter/nvim-treesitter'
+ Plug 'sheerun/vim-polyglot'
 
  "Дерево папок"
  Plug 'preservim/nerdtree'
@@ -44,12 +44,16 @@ call plug#begin()
 
  "Добавляет emoji"
  Plug 'junegunn/vim-emoji'
- 	
+
+ "Красивые иконки для NerdTree и прочего"
+ Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 
 "Настройка темы"
 
+syntax on
 set background=dark
 colorscheme gruvbox
 let g:gruvbox_background = 'hard'
