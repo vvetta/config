@@ -1,5 +1,5 @@
 # My Vim config
-В качестве основного редактора кода я использую **Vim**! <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1200px-Vimlogo.svg.png" width="200" height="200">
+В качестве основного редактора кода я использую **Vim**! <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1200px-Vimlogo.svg.png" width="50" height="50">
 
 ## Как поставить мой Vim конфиг.
 1. Первое что вы должны сделать - это поставить менеджер плагинов [VimPlug](https://github.com/junegunn/vim-plug). Это можно сделать следующей командой: `curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
