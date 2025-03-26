@@ -9,6 +9,7 @@ set linebreak
 set tw=120
 set smartindent
 set cursorline
+let mapleader = ","
 
 "Менеджер плагинов: VimPlug"
 
@@ -48,6 +49,9 @@ call plug#begin()
  "Красивые иконки для NerdTree и прочего"
  Plug 'ryanoasis/vim-devicons'
 
+ "Комментарии"
+ Plug 'preservim/nerdcommenter'
+
 call plug#end()
 
 
@@ -83,15 +87,20 @@ nnoremap <C-f> :NERDTreeFind<CR>
 "Настройка Ale"
 
 let g:ale_linters = {
-\   'c': ['clang', 'gcc', 'cppcheck'],
+\   'c': ['clangd', 'gcc', 'clang'],
 \}
+
 let g:ale_completion_enabled = 1
 let g:ale_c_clang_executable = 'clang'
 let g:ale_c_gcc_executable = 'gcc'
-
+let g:ale_completion_autoimport = 1
+let g:ale_set_balloons = 1
+let g:ale_set_highlights = 1
+let g:ale_set_signs = 1
+let g:ale_set_quickfix = 1
+let g:ale_fix_on_save = 1
 
 "Настройка split term"
-
 let g:split_term_default_shell = "bash"
 
 
@@ -100,3 +109,14 @@ let g:gitgutter_sign_added = emoji#for('heavy_check_mark')
 let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
 let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
 let g:gitgutter_sign_modified_removed = emoji#for('collision')
+
+"Настройка комментариев"
+let g:NERDCreateDefaultMappings = 1
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDAltDelims_java = 1
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDToggleCheckAllLines = 1
