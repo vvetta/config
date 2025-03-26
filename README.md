@@ -25,7 +25,7 @@
 
     - Прокрутка вверх: `Ctrl` + `U`
 
-3. Дерево файлов <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/cbbcb833-c42d-463e-8ffc-235dc2cc23e6" />
+3. Дерево файлов <img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/cbbcb833-c42d-463e-8ffc-235dc2cc23e6" />
 
     
     - Открыть/закрыть: `Ctrl` + `T`
