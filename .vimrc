@@ -37,8 +37,9 @@ call plug#begin()
  Plug 'junegunn/fzf'
  Plug 'junegunn/fzf.vim'
 
- "Linter"
- Plug 'dense-analysis/ale'
+ "linter for Golang"
+ Plug 'fatih/vim-go'
+ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
  "Позволяет открыть терминал внутри Vim"
  Plug 'vimlab/split-term.vim'
@@ -84,21 +85,9 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 
-"Настройка Ale"
+"Настройка vim-go"
+let g:go_def_mapping_enabled = 0
 
-let g:ale_linters = {
-\   'c': ['clangd', 'gcc', 'clang'],
-\}
-
-let g:ale_completion_enabled = 1
-let g:ale_c_clang_executable = 'clang'
-let g:ale_c_gcc_executable = 'gcc'
-let g:ale_completion_autoimport = 1
-let g:ale_set_balloons = 1
-let g:ale_set_highlights = 1
-let g:ale_set_signs = 1
-let g:ale_set_quickfix = 1
-let g:ale_fix_on_save = 1
 
 "Настройка split term"
 let g:split_term_default_shell = "bash"
