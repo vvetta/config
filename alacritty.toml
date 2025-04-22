@@ -1,0 +1,13 @@
+[window]
+opacity = 0.9
+
+[font]
+size = 14.0
+
+
+# Данную настройку можно менять в зависимости от системы
+# На windows у меня запускается wsl
+
+#[terminal.shell]
+#program = "wsl.exe"
+
